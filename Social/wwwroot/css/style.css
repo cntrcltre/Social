@@ -6,6 +6,9 @@
 a{
     text-decoration: none;
 }
+li {
+    list-style-type: none;
+}
 body{
     background: #eaeaf0;
     font-family: "Open Sans";
@@ -271,4 +274,21 @@ header{
 .about img{
     width: 14px;
     pointer-events: none;
+}
+.profile__nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.prof__element {
+    margin-right: 25px;
+    padding: 10px;
+    text-decoration: none;
+    font-family: "Open Sans";
+    border: none;
+    border-radius: 5px;
+    color: #27263D;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
 }
