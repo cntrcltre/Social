@@ -6,11 +6,6 @@
 a{
     text-decoration: none;
 }
-li {
-    list-style-type: none; 
-    color: red;
-    margin-bottom: 4px;
-}
 body{
     background: #eaeaf0;
     font-family: "Open Sans";
@@ -43,6 +38,7 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 70px;
     background: #fff;
 }
 .header-logo{
@@ -162,9 +158,9 @@ header{
 .menu__element{
     cursor: pointer;
     margin-left: 25px;
-    padding: 20px 20px;
-    width: 30px;
-    height: 30px;
+    padding: 23px 20px;
+    width: 25px;
+    height: 25px;
 }
 .menu__element:hover{
     background: rgb(219, 219, 219);
@@ -172,6 +168,21 @@ header{
 .menu__element img{
     pointer-events: none;
     width: 100%;
+}
+#logout{
+    text-decoration: none;
+    font-family: "Open Sans";
+    border: none;
+    background: #fff;
+    color: #27263D;
+    margin-left: 25px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 26px 20px;
+}
+#logout:hover{
+    background: rgb(219, 219, 219);
 }
 .profile{
     display: flex;
