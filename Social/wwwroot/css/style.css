@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li {
+    list-style-type: none; 
+    color: red;
+    margin-bottom: 4px;
+}
+body{
+    background: #eaeaf0;
+    font-family: "Open Sans";
+    font-weight: 300;
+}
+header{
+    background: #fff;
+    box-shadow: 0 0 6px rgba(39, 38, 61, 0.8);
+}
+.classic__btn{
+    font-family: "Open Sans";
+    border: none;
+    border-radius: 5px;
+    background: #27263D;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    width: 145px;
+    height: 40px;
+}
+.classic__btn:hover{
+    background: rgb(78, 76, 99);
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #fff;
+}
+.header-logo{
+    width: 160px;
+}
+.sign{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0 0 0;
+}
+#signup{
+    align-items: flex-start;
+    padding: 50px 0 0 0;
+}
+.sign__left{
+    width: 45%;
+}
+.sign__left img{
+    width: 100%;
+    pointer-events: none;
+}
+
+.sign form{
+    width: 35%;
+    padding: 10px;
+    padding-bottom: 35px;
+    border-radius: 20px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(39, 38, 61, 0.4);
+}
+.form__row{
+    margin-top: 10%;
+}
+.sign form input{
+    border: 2px solid rgba(39, 38, 61, 0.4);
+    background: #fff;
+    border-radius: 5px;
+    width: 280px;
+    height: 30px;
+    padding: 2px 7px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.sign form input:focus{
+    border: 2px solid #27263D;
+}
+.sign form p{
+    color: #27263D;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.sign form button{
+    font-family: "Open Sans";
+    border: none;
+    border-radius: 5px;
+    background: #27263D;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    width: 145px;
+    height: 40px;
+}
+.sign form button:hover{
+    background: rgb(78, 76, 99);
+}
+.sign form #join__btn{
+    text-decoration: none;
+    font-family: "Open Sans";
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    color: #27263D;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px;
+}
+.sign form #join__btn:hover{
+    background: #e2e2e4;
+}
+.sign form #in__btn{
+    text-decoration: none;
+    font-family: "Open Sans";
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    color: #27263D;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px;
+}
+.sign form #in__btn:hover{
+    background: #e2e2e4;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.profileimg{
+    cursor: pointer;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+}
+.profileimg img{
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    pointer-events: none;
+}
+.menu__element{
+    cursor: pointer;
+    margin-left: 25px;
+    padding: 20px 20px;
+    width: 30px;
+    height: 30px;
+}
+.menu__element:hover{
+    background: rgb(219, 219, 219);
+}
+.menu__element img{
+    pointer-events: none;
+    width: 100%;
+}
+.profile{
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    height: 400px;
+    
+}
+.profile__left{
+    width: 25%;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(39, 38, 61, 0.4);
+}
+.profile__left button{
+    font-family: "Open Sans";
+    border: none;
+    border-radius: 5px;
+    background: #27263D;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    width: 145px;
+    height: 40px;
+}
+.mainprofile{
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 5px;
+    text-align: center;
+}
+.mainprofile img{
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    pointer-events: none;
+}
+.profile__right{
+    width: 75%;
+    margin-left: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(39, 38, 61, 0.4);
+}
+.info{
+    margin-top: 30px;
+    margin-left: 40px;
+    width: 400px;
+}
+.profile__right span{
+    color: #27263D;
+    font-weight: 700;
+}
+#loc{
+    margin-left: 25px;
+    display: inline-block;
+}
+#loc span{
+    color: #808086;
+    font-size: 12px;
+    font-weight: 400;
+}
+#loc img{
+    pointer-events: none;
+    width: 14px;
+}
+.prof__actions{
+    margin-top: 15px;
+}
+.prof__actions button{
+    margin-right: 5px;
+    font-size: 13px;
+    width: 140px;
+    height: 30px;
+}
+.about__info{
+    margin-top: 30px;
+}
+.about span{
+    margin-left: 5px;
+    font-weight: 600;
+}
+.about img{
+    width: 14px;
+    pointer-events: none;
+}

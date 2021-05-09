@@ -1,0 +1,41 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<main>
+    <div class="wrapper">
+        <div class="sign">
+            <div class="sign__left">
+                <img src="~/img/social.svg" alt="sign">
+            </div>
+            <form id="account" method="post">
+                <div class="form__row">
+                    <p>Авторизация</p>
+                    <div asp-validation-summary="All"></div>
+                    <div>
+                        <input asp-for="Input.Email" placeholder="Email">
+                        @*<span asp-validation-for="Input.Email" class="text-danger"></span>*@
+                    </div>
+                    <div>
+                        <input asp-for="Input.Password" placeholder="Пароль">
+                        @*<span asp-validation-for="Input.Password" class="text-danger"></span>*@
+                    </div>
+                    <button type="submit">Войти</button>
+                    <a asp-area="Identity" asp-page="/Account/Register" id="join__btn">Присоединиться</a>
+                    @*<label asp-for="Input.RememberMe">
+            <input asp-for="Input.RememberMe" />
+            @Html.DisplayNameFor(m => m.Input.RememberMe)
+        </label>*@
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
