@@ -102,11 +102,13 @@ namespace Social.Areas.Identity.Pages.Account.Manage
             if (Input.FirstName != user.FirstName)
             {
                 user.FirstName = Input.FirstName;
+                var result = await _userManager.UpdateAsync(user);
             }
 
             if (Input.LastName != user.LastName)
             {
                 user.LastName = Input.LastName;
+                var result = await _userManager.UpdateAsync(user);
             }
 
             await _signInManager.RefreshSignInAsync(user);
