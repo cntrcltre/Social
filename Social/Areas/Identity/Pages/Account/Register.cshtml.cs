@@ -46,7 +46,7 @@ namespace Social.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [Required(ErrorMessage = "Введите")]
+            [Required(ErrorMessage = "Введите имя")]
             [DataType(DataType.Text)]
             [Display(Name = "FirstName")]
             public string FirstName { get; set; }

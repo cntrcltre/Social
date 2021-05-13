@@ -282,7 +282,7 @@ header{
     margin-top: 50px;
 }
 .left__manager {
-    margin-right: 100px;
+    margin-right: 80px;
     width: 20%;
     border-radius: 20px;
     text-align: center;
@@ -305,7 +305,7 @@ header{
     background: #e2e2e4;
 }
 .right__manager {
-    width: 40%;
+    width: 45%;
     border-radius: 20px;
     text-align: center;
     background: #fff;
@@ -344,6 +344,7 @@ header{
     width: 90%;
 }
 #delete {
+    display:inline-block;
     text-decoration: none;
     font-family: "Open Sans";
     border: none;
@@ -354,7 +355,16 @@ header{
     font-size: 15px;
     cursor: pointer;
     padding: 7px;
+    margin-bottom: 10px;
 }
-    #delete:hover {
-        background: rgba(203,0,23,0.4);
-    }
+#delete:hover {
+    background: rgba(203,0,23,0.4);
+}
+.form__confirm{
+    flex-direction:column;
+}
+.text-danger li{
+    color: red;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
