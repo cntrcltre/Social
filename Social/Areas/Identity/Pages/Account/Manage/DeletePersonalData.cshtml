@@ -1,0 +1,29 @@
+﻿@page
+@model DeletePersonalDataModel
+@{
+    ViewData["Title"] = "Подтверждение удаления";
+    ViewData["ActivePage"] = ManageNavPages.PersonalData;
+}
+
+<h4>@ViewData["Title"]</h4>
+
+<div class="right__block">
+    <p id="profile__del">
+        Введите пароль для подтверждения удаления.
+    </p>
+    <form id="delete-user" method="post" class="form-group form__confirm">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        @if (Model.RequirePassword)
+        {
+            <div class="form-group">
+                <input asp-for="Input.Password" placeholder="Подтвердите пароль" class="form-control " />
+            </div>
+        }
+        <button class="confirm__del" id="delete" type="submit">Удалить</button>
+    </form>
+</div>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

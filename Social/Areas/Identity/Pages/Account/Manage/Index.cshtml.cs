@@ -52,7 +52,6 @@ namespace Social.Areas.Identity.Pages.Account.Manage
         {
             var userName = await _userManager.GetUserNameAsync(user);
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
-
             Username = userName;
 
             Input = new InputModel
@@ -103,15 +102,17 @@ namespace Social.Areas.Identity.Pages.Account.Manage
             if (Input.FirstName != user.FirstName)
             {
                 user.FirstName = Input.FirstName;
+                var result = await _userManager.UpdateAsync(user);
             }
 
             if (Input.LastName != user.LastName)
             {
                 user.LastName = Input.LastName;
+                var result = await _userManager.UpdateAsync(user);
             }
 
             await _signInManager.RefreshSignInAsync(user);
-            StatusMessage = "Your profile has been updated";
+            StatusMessage = "Ваш профиль был обновлен";
             return RedirectToPage();
         }
     }

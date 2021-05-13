@@ -1,0 +1,19 @@
+﻿@page
+@model PersonalDataModel
+@{
+    ViewData["Title"] = "Удаление профиля";
+    ViewData["ActivePage"] = ManageNavPages.PersonalData;
+}
+
+<h4>@ViewData["Title"]</h4>
+<div class="right__block">
+    <p id="profile__del">
+        Удаление этих данных приведет к удалению вашей учетной записи без возможности восстановления.
+    </p>
+    <a id="delete" asp-page="DeletePersonalData">Удалить</a>
+</div>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

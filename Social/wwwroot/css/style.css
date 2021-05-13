@@ -6,6 +6,9 @@
 a{
     text-decoration: none;
 }
+li {
+    list-style-type: none;
+}
 body{
     background: #eaeaf0;
     font-family: "Open Sans";
@@ -271,4 +274,97 @@ header{
 .about img{
     width: 14px;
     pointer-events: none;
+}
+.profile__manager{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+.left__manager {
+    margin-right: 80px;
+    width: 20%;
+    border-radius: 20px;
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(39, 38, 61, 0.4);
+}
+.left__manager li {
+    font-size: 17px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 5px 0;
+    color: #27263D;
+    font-weight: 400;
+}
+.left__manager li a {
+    color: #27263D;
+}
+.left__manager li:hover {
+    background: #e2e2e4;
+}
+.right__manager {
+    width: 45%;
+    border-radius: 20px;
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(39, 38, 61, 0.4);
+}
+.manager__label {
+    font-size: 17px;
+    color: #27263D;
+    font-weight:500;
+    margin-right: 45px;
+    display: inline-block;
+    width: 80px;
+}
+.form-group{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.form-control {
+    border: 2px solid rgba(39, 38, 61, 0.4);
+    background: #fff;
+    border-radius: 5px;
+    width: 280px;
+    height: 30px;
+    padding: 2px 7px;
+    font-size: 15px;
+}
+.disabled {
+    background: #E4E4E4;
+}
+#profile__del{
+    margin: 15px auto;
+    font-weight: 400;
+    width: 90%;
+}
+#delete {
+    display:inline-block;
+    text-decoration: none;
+    font-family: "Open Sans";
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    color: #27263D;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+#delete:hover {
+    background: rgba(203,0,23,0.4);
+}
+.form__confirm{
+    flex-direction:column;
+}
+.text-danger li{
+    color: red;
+    font-size: 16px;
+    margin-bottom: 15px;
 }

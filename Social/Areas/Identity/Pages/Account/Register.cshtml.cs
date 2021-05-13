@@ -46,7 +46,7 @@ namespace Social.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [Required(ErrorMessage = "Введите")]
+            [Required(ErrorMessage = "Введите имя")]
             [DataType(DataType.Text)]
             [Display(Name = "FirstName")]
             public string FirstName { get; set; }
@@ -94,7 +94,7 @@ namespace Social.Areas.Identity.Pages.Account
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
                     var callbackUrl = Url.Page(
-                        "/Account/ConfirmEmail",
+                        "/Account/ConfirmEmail", 
                         pageHandler: null,
                         values: new { area = "Identity", userId = user.Id, code = code, returnUrl = returnUrl },
                         protocol: Request.Scheme);
@@ -118,7 +118,6 @@ namespace Social.Areas.Identity.Pages.Account
                 }
             }
 
-            // If we got this far, something failed, redisplay form
             return Page();
         }
     }
